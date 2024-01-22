@@ -26,4 +26,4 @@ while True:
             msg_bikes = {'station_id': station_id, 'bikes_available': bikes_available}
             producteur_bikes.send("velo_disponibilite_par_station", json.dumps(msg_bikes).encode(), str(station_id).encode())
 
-        time.sleep(60)  # Attendez une minute avant de récupérer de nouvelles données
+        time.sleep(60)
